@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="./clock.css">
+    <script src="./clock.js"></script>
+
+</head>
+
+<body onload="setInterval(displayDateTime,1000)">
+
+    <header>
+        <div class="header_text">Digital Clock</div>
+    </header>
+
+    <main class="main_container">
+
+        24 Hour Format
+        <section class="container">
+            <div id="clock_24"> 00 : 00 : 00 </div>
+        </section>
+
+        <br>
+
+        12 Hour Format
+        <section class="container">
+            <div id="clock_12"> 00 : 00 </div>
+        </section>
+
+        <br>
+
+        Calender
+        <section class="container">
+            <div id="date">DD - MM - YYYY</div>
+
+            <hr>
+
+            <div class="day">
+                <span style="font-size:25px;" id="day">Default Day</span>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
